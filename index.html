@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yagavu Chance Stevo - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">YCS</div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Yagavu Chance Stevo</h1>
+            <p>I'm a passionate full-stack web developer and problem-solver. I bring ideas to life with code and design.</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+        <div class="hero-image">
+            <img src="/images/1.jpg" alt="Profile Picture" class="profile-picture">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a web developer specializing in front-end and back-end development. With a solid foundation in both, I build interactive and dynamic websites and applications. My goal is to create efficient and scalable solutions that solve real-world problems.</p>
+        <a href="cv.pdf" class="btn">Download CV</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-django"></i>
+                <p>Django</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Youth Opportunity Platform</h3>
+                <p>Developed a Django-based platform connecting South Sudanese youth with job, scholarship, and fellowship opportunities. Impact: Facilitated access to valuable opportunities for youth development. <a href="http://www.ssyouthopportunities.com" target="_blank">Visit Website</a></p>
+            </div>
+            <div class="project-card">
+                <h3>Diet Planning Mobile Application</h3>
+                <p>A mobile app enabling users to create personalized diet plans, track daily food intake, and receive customized meal recommendations. Features: Calorie counting, nutrient tracking, goal setting, integration with fitness apps. Designed to support users in achieving their health and wellness goals. <a href="https://github.com/your-repo" target="_blank">View on GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <p>BSc in Information Technology - Uganda Christian University (October 2020 - July 2023)</p>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <h2>Interests</h2>
+        <p>I am passionate about cybersecurity, networking, blockchain, and innovative solutions that leverage technology to improve lives.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/YOUR_EMAIL" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Yagavu Chance Stevo. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
