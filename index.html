@@ -1,154 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Yagavu Chance Stevo - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Yagavu Chance Stevo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-</head>
-
-<body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="logo">YCS</div>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="menu">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm Yagavu Chance Stevo</h1>
-            <p>I'm a passionate full-stack web developer and problem-solver. I bring ideas to life with code and design.</p>
-            <a href="#projects" class="btn">See My Work</a>
-        </div>
-        <div class="hero-image">
-            <img src="images/1.jpg" alt="Profile Picture" class="profile-picture">
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a web developer specializing in front-end and back-end development. With a solid foundation in both, I build interactive and dynamic websites and applications. My goal is to create efficient and scalable solutions that solve real-world problems.</p>
-        <a href="cv.pdf" class="btn">Download CV</a>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skill-grid">
-            <div class="skill">
-                <i class="fab fa-html5"></i>
-                <p>HTML5</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS3</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-js"></i>
-                <p>JavaScript</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-python"></i>
-                <p>Python</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 75%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-django"></i>
-                <p>Django</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-git-alt"></i>
-                <p>Git</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 65%;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Youth Opportunity Platform</h3>
-                <p>Developed a Django-based platform connecting South Sudanese youth with job, scholarship, and fellowship opportunities. Impact: Facilitated access to valuable opportunities for youth development. <a href="http://www.ssyouthopportunities.com" target="_blank">Visit Website</a></p>
-            </div>
-            <div class="project-card">
-                <h3>Diet Planning Mobile Application</h3>
-                <p>A mobile app enabling users to create personalized diet plans, track daily food intake, and receive customized meal recommendations. Features: Calorie counting, nutrient tracking, goal setting, integration with fitness apps. Designed to support users in achieving their health and wellness goals. <a href="https://github.com/your-repo" target="_blank">View on GitHub</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <h2>Education</h2>
-        <p>BSc in Information Technology - Uganda Christian University (October 2020 - July 2023)</p>
-    </section>
-
-    <!-- Interests Section -->
-    <section id="interests" class="interests">
-        <h2>Interests</h2>
-        <p>I am passionate about cybersecurity, networking, blockchain, and innovative solutions that leverage technology to improve lives.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/YOUR_EMAIL" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="_replyto" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Yagavu Chance Stevo. All Rights Reserved.</p>
-    </footer>
     
-    <script src="index.js"></script>
+    <style>
+        :root {
+            --bg: #050505;
+            --card-bg: #0f0f12;
+            --accent: #3b82f6;
+            --text-main: #e2e8f0;
+            --text-dim: #94a3b8;
+            --border: rgba(255, 255, 255, 0.07);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            background-color: var(--bg); color: var(--text-main); 
+            font-family: 'Inter', sans-serif; line-height: 1.6; overflow-x: hidden;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+        .navbar {
+            position: fixed; top: 0; width: 100%; padding: 1.2rem 0;
+            background: rgba(5, 5, 5, 0.85); backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border); z-index: 1000;
+        }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; letter-spacing: -1px; font-size: 1.2rem; }
+        .logo span { color: var(--accent); }
+        
+        .nav-links { display: flex; list-style: none; gap: 1.5rem; }
+        .nav-links a { text-decoration: none; color: var(--text-dim); font-size: 0.85rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero */
+        .hero { min-height: 90vh; display: flex; align-items: center; padding-top: 100px; }
+        .status-badge { 
+            font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--accent);
+            background: rgba(59, 130, 246, 0.1); padding: 6px 14px; border-radius: 20px;
+            display: inline-flex; align-items: center; gap: 8px; margin-bottom: 1.5rem;
+        }
+        .dot { height: 6px; width: 6px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 8px var(--accent); }
+        .hero h1 { font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem; font-weight: 800; }
+        .hero h1 span { color: var(--accent); }
+        .hero p { max-width: 700px; color: var(--text-dim); font-size: 1.1rem; margin-bottom: 2rem; }
+
+        /* General Sections */
+        section { padding: 60px 0; }
+        .section-label { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 2.5rem; display: block; }
+        
+        .reveal { opacity: 0; transform: translateY(25px); transition: 0.8s all ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* Experience & Education Grid */
+        .split-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 3rem; }
+        .timeline { border-left: 1px solid var(--border); padding-left: 1.5rem; }
+        .timeline-item { margin-bottom: 2.5rem; position: relative; }
+        .timeline-item::before { content: ""; position: absolute; left: -1.85rem; top: 0.5rem; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+        .timeline-item h3 { font-size: 1.1rem; margin-bottom: 4px; }
+        .timeline-item .role-info { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 8px; display: block; }
+        .timeline-item p { font-size: 0.9rem; color: var(--text-dim); }
+
+        /* Cards */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .card { background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border); transition: 0.3s; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        .card i { color: var(--accent); font-size: 1.3rem; margin-bottom: 1rem; display: block; }
+        .card h4 { margin-bottom: 10px; font-size: 1rem; }
+        .card p { font-size: 0.85rem; color: var(--text-dim); }
+
+        /* Certs & Impact Tags */
+        .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+        .tag { font-size: 0.7rem; background: rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 4px; color: var(--text-dim); border: 1px solid var(--border); }
+
+        footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; background: #08080a; }
+        .contact-btns { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; }
+        .btn { padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        .btn-primary { background: var(--accent); color: white; }
+        .btn-outline { border: 1px solid var(--border); color: var(--text-main); }
+
+        @media (max-width: 850px) {
+            .split-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+        /* Integrated Project Extensions */
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .project-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 2.5rem;
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .project-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .project-header h3 {
+        font-size: 1.4rem;
+        margin-top: 10px;
+        color: var(--text-main);
+    }
+
+    .project-body p {
+        font-size: 0.9rem;
+        color: var(--text-dim);
+        line-height: 1.7;
+    }
+
+    .tech-stack {
+        display: flex;
+        gap: 12px;
+        margin: 1.5rem 0;
+        color: var(--accent);
+        font-size: 1.1rem;
+    }
+
+    .impact-badge {
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .impact-badge i {
+        color: #10b981; /* Success Green for impact */
+        font-size: 0.9rem;
+    }
+
+    .impact-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.75rem;
+        color: var(--text-main);
+        font-weight: 600;
+    }
+
+    .status-tag {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.65rem;
+        background: rgba(59, 130, 246, 0.1);
+        color: var(--accent);
+        padding: 4px 10px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        width: fit-content;
+    }
+    /* Hero Layout */
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+.hero-content {
+    flex: 1.2;
+}
+
+.hero-titles {
+    font-size: 1.1rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Photo Styling */
+.hero-image-container {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-frame {
+    width: 320px;
+    height: 320px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    padding: 10px;
+    background: var(--card-bg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+
+.photo-frame:hover {
+    border-color: var(--accent);
+    transform: rotate(2deg);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 850px) {
+    .hero-flex {
+        flex-direction: column-reverse; /* Puts photo on top or bottom based on preference */
+        text-align: center;
+    }
+    
+    .status-badge {
+        justify-content: center;
+    }
+    
+    .photo-frame {
+        width: 250px;
+        height: 250px;
+    }
+}
+/* About Section Styles */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    color: var(--text-dim);
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+
+.highlight-box {
+    background: var(--glass);
+    border-left: 3px solid var(--accent);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.highlight-box span {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 850px) {
+    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+        
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">My<span>Porfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                   <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+    <div class="container hero-flex">
+        <div class="hero-content">
+            <div class="status-badge"><span class="dot"></span> System Status: Online & Optimized</div>
+            <h1>Yagavu Chance Stevo</h1>
+            <h2 class="hero-titles">IT Infrastructure | Systems Specialist | IT Support | Network Engineer | System Administrator</h2>
+        
+            <div class="hero-btns">
+                <a href="mailto:yagavuchancestevo@gmail.com" class="btn btn-primary">Hire Specialist</a>
+                <a href="#experience" class="btn btn-outline">Explore Career</a>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <div class="photo-frame">
+                <img src="./images/1.jpg" alt="Yagavu Chance Stevo" class="profile-photo">
+            </div>
+        </div>
+    </div>
+</header>
+<section id="about" class="reveal container">
+    <span class="section-label">01. About Me</span>
+    <div class="about-grid">
+        <div class="about-text">
+            <h2>Bridging Complexity with Reliability</h2>
+            <p>
+                I am a mission-driven IT professional dedicated to architecting systems that don't just work, but scale. My journey began with a deep curiosity about how data moves across networks, leading me to specialize in **Infrastructure Management** and **Real-time Data Pipelines**.
+            </p>
+            <p>
+                Currently, as the Head of Infrastructure at ClinicMaster, I focus on the intersection of healthcare and technology. I believe that stable IT infrastructure is the backbone of modern service delivery, especially in challenging, remote environments.
+            </p>
+            <div class="highlight-box">
+                <span>CURRENT FOCUS:</span>
+                Highly available Linux clusters and secure CDC data streaming for national health initiatives.
+            </div>
+        </div>
+        
+        <div class="about-visual">
+            <div class="card" style="border-style: dashed; opacity: 0.8;">
+                <i class="fas fa-quote-left"></i>
+                <p style="font-style: italic; font-size: 1.1rem; color: var(--text-main);">
+                    "My goal is to build digital foundations so solid they become invisible, allowing organizations to focus entirely on their mission."
+                </p>
+                <h4 style="margin-top: 1rem; color: var(--accent);">— Yagavu Chance Stevo</h4>
+            </div>
+            <div class="card" style="border-style: dashed; opacity: 0.8;">
+                <i class="fas fa-quote-left"></i>
+                <p style="font-style: italic; font-size: 1.1rem; color: var(--text-main);">
+                    "My goal is to design resilient digital infrastructure that quietly powers critical services, ensuring systems remain secure, scalable, and always available."
+                </p>
+                <h4 style="margin-top: 1rem; color: var(--accent);">— Yagavu Chance Stevo</h4>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    <section id="experience" class="reveal container">
+        <span class="section-label">Professional Experience</span>
+        <div class="split-grid">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Head of Infrastructure</h3>
+                    <span class="role-info">ClinicMaster International | Jan 2025 — Present</span>
+                    <p>Designing and managing IT infrastructure,Managing Linux server clusters hosting critical healthcare databases and applications
+                        Enforcing enterprise-grade security protocols for sensitive data protection.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>System Support Officer</h3>
+                    <span class="role-info">ClinicMaster International | Jan 2025 — Present</span>
+                    <p>Supporting critical healthcare systems across multiple facilities. Key tasks: Laboratory equipment integration, data migrations, and performance optimization for PostgreSQL databases.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>IT Lab Technician</h3>
+                    <span class="role-info">Uganda Christian University | 2023 — 2024</span>
+                    <p>Orchestrated campus-wide network maintenance. Configured routers, switches, and virtual machine environments while leading cybersecurity awareness initiatives.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>IT Support Intern</h3>
+                    <span class="role-info">Uganda Christian University | 2022</span>
+                    <p>Executed hardware/software troubleshooting and routine system backups for staff and students.</p>
+                </div>
+            </div>
+
+            <div>
+                <span class="section-label" style="margin-bottom:1rem;">Impact & Volunteering</span>
+                <div class="card" style="margin-bottom:1rem;">
+                    <i class="fas fa-globe-africa"></i>
+                    <h4>UN Online Volunteer</h4>
+                    <p>Contributed to UNDP's "Faces of Africa" campaign, enhancing digital advocacy for Sustainable Development Goals.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h4>Youth Opportunity Platform</h4>
+                    <p>Developed a Django-based platform connecting South Sudanese youth with jobs and scholarships.</p>
+                    <div class="tag-cloud">
+                        <span class="tag">Django</span> <span class="tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="reveal container alternate">
+        <span class="section-label">Core Competencies</span>
+        <div class="grid-3">
+            <div class="card">
+                <i class="fas fa-network-wired"></i>
+                <h4>Networking</h4>
+                <p>TCP/IP, LAN/Wi-Fi support, Nagios monitoring, Cisco Routing & Switching.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Cybersecurity</h4>
+                <p>Vulnerability assessment (Nessus), penetration testing, and encryption protocols.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-server"></i>
+                <h4>Server Admin</h4>
+                <p>Windows & Linux administration, VMware, Hyper-V, and automated backup procedures.</p>
+            </div>
+        </div>
+    </section>
+
+<section id="projects" class="reveal container">
+    <span class="section-label">Projects Portfolio</span>
+    
+    <div class="project-grid">
+        <div class="project-card">
+            <div class="project-header">
+                <div class="status-tag">Live / High-Impact</div>
+                <h3>MOH Multi-Facility Data Pipeline</h3>
+            </div>
+            
+            <div class="project-body">
+                <p>Architected a Change Data Capture (CDC) pipeline using **Apache Kafka** and **Debezium** to stream real-time healthcare data from SQL Server regional databases to a central PostgreSQL warehouse for MoH analytics.</p>
+                
+                <div class="tech-stack">
+                    <i class="fas fa-stream" title="Kafka"></i>
+                    <i class="fas fa-database" title="PostgreSQL"></i>
+                    <i class="fab fa-linux" title="Linux"></i>
+                </div>
+            </div>
+
+            
+
+            <div class="impact-badge">
+                <i class="fas fa-check-circle"></i>
+                <span class="impact-text">Centralized 99% of facility data for national reporting.</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <div class="status-tag">Project Lead</div>
+                <h3>ClinicMaster Inventory Re-engineering</h3>
+            </div>
+            
+            <div class="project-body">
+                <p>Led the digital transformation of procurement workflows. Implemented structured requisition, automated approval chains, and GRN tracking to eliminate supply chain bottlenecks in healthcare facilities.</p>
+                
+                <div class="tech-stack">
+                    <i class="fas fa-tasks" title="Project Management"></i>
+                    <i class="fas fa-code-branch" title="Workflow"></i>
+                    <i class="fas fa-hospital" title="ClinicMaster"></i>
+                </div>
+            </div>
+
+            <div class="impact-badge">
+                <i class="fas fa-check-circle"></i>
+                <span class="impact-text">40% reduction in supply procurement latency.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="education" class="reveal container">
+        <div class="split-grid">
+            <div>
+                <span class="section-label">Education</span>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>BSc in Information Technology</h3>
+                        <p>Uganda Christian University | 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span class="section-label">Certifications</span>
+                <div class="tag-cloud" style="margin-top:0;">
+                    <span class="tag">Cisco: Enterprise Networking</span>
+                    <span class="tag">network walks academy: CCNA 200-301 Training</span>
+                    <span class="tag">UNITAR: Digital Skills</span>
+                    <span class="tag">UCC Cyber-Stars Competition </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Let's build a secure future.</h2>
+            <p style="color:var(--text-dim); margin-bottom: 2rem;">Ready for remote-site operations,System supports,Deployments, infrastructure management and Networking</p>
+            <div class="contact-btns">
+                <a href="mailto:yagavuchancestevo@gmail.com" class="btn btn-primary">Email Me</a>
+                <a href="https://linkedin.com/in/yagavu-chance-72497423b" class="btn btn-outline">LinkedIn Profile</a>
+            </div>
+            <p style="font-size: 0.7rem; color: var(--text-dim);">Built for yagavu chance stevo &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>
